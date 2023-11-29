@@ -1,0 +1,255 @@
+{% load static %}
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FavIcon-->
+    <link rel="shortcut icon" href= {% static "imgs/game-controller.png" %}>
+
+    <!--Fontes-->
+    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Teko&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&family=Teko&display=swap" rel="stylesheet">
+
+    <!--Pastas-->
+    
+    <link rel="stylesheet" href= {% static "css/style.css" %} >
+    <link rel="stylesheet" href= {% static "mobile/media.css" %} >
+    <script src={% static "js/index.js" %} defer></script>
+    <title>Game Over</title>
+</head>
+
+<header>
+    <img class="menu-button" src={% static "imgs/menu.png" %} alt="">
+    <img class="menu-X-button" src={% static "imgs/x-button.png" %} alt="">
+
+    <div class="header-content">
+
+        <div class="logo-content">
+
+            <a href="home.html"><img src= {% static "imgs/game-controller.png" %}  alt=""></a>
+
+        </div>
+
+        <ul class="items-desktop">
+
+            <a href="#inicio"><li>Início</li></a>
+
+            <a href="#destaques"><li>Destaques</li></a>
+
+            <a href="#produtos"><li>Produtos</li></a>
+
+        </ul>
+
+        <ul class="items-mobile">
+
+            <a href="#inicio"><li>Início</li></a>
+
+            <a href="#produtos"><li>Produtos</li></a>
+
+            <a href=""><li>Carrinho</li></a>
+
+        </ul>
+
+    </div>
+
+</header>
+
+<body>
+
+    <a href="#inicio" id="inicio"></a>
+    
+    <section class="banner-container">
+
+        <div class="banner-content">
+
+            <h1>Melhores preços para <br> as suas noites de jogatina</h1>
+
+        </div>
+
+    </section>
+
+    <section class="slider-content">
+
+        <a href="#destaques" id="destaques"></a>
+
+        <div class="slider-txt">
+
+            <h2><span>!</span> Produto em destaque</h2>
+
+        </div>
+
+        <div class="background left"></div>
+        <div class="background right"></div>
+
+        <div class="slider">
+    
+            <div class="slide">
+
+                <div class="slide-title"><h4>Mouse</h4></div>
+
+                <img src={% static "imgs/mouse.png" %} alt="">
+
+                <div class="price-content">
+
+                    <p>Mouse Logitec<br>Steel Series</p><br>
+                    <p class="price">R$229,99</p>
+
+                </div>
+
+                <button class="btn-add">+</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="items-container">
+
+        <div class="items-content">
+
+            <a href="#produtos" id="produtos"></a>
+        
+            {% for produto in produtos %}
+                <div class="item">
+
+                    <button class="btn-add">+</button>
+
+                    <img src= {{ produto.image.url }} alt="">
+
+                    <p>{{ produto.preco }}</p>
+
+                </div>
+            {% endfor %}
+
+            <div class="item item1">
+
+                <button class="btn-add">+</button>
+
+                <img src="imgs/monitor.png" alt="">
+
+                <p>R$0,00</p>
+
+            </div>
+            
+            <div class="item item2">
+
+                <button class="btn-add">+</button>
+
+                <img src="imgs/mouse.png" alt="">
+
+                <p>R$0,00</p>
+
+            </div>
+
+            <div class="item item3">
+
+                <button class="btn-add">+</button>
+
+                <img src="imgs/mouse-pad.png" alt="">
+
+                <p>R$0,00</p>
+
+            </div>
+
+            <div class="item item4">
+
+                <button class="btn-add">+</button>
+
+                <img src="imgs/headGamer.png" alt="">
+
+                <p>R$0,00</p>
+
+            </div>
+
+        </div>
+
+        <div class="items-content">
+
+            <div class="item item1">
+
+                <button class="btn-add">+</button>
+
+                <img src="imgs/monitor.png" alt="">
+
+                <p>R$0,00</p>
+
+            </div>
+            
+            <div class="item item2">
+
+                <button class="btn-add">+</button>
+
+                <img src="imgs/mouse.png" alt="">
+
+                <p>R$0,00</p>
+
+            </div>
+
+            <div class="item item3">
+
+                <button class="btn-add">+</button>
+
+                <img src="imgs/mouse-pad.png" alt="">
+
+                <p>R$0,00</p>
+
+            </div>
+
+            <div class="item item4">
+
+                <button class="btn-add">+</button>
+
+                <img src="imgs/headGamer.png" alt="">
+
+                <p>R$0,00</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <img src="imgs/game-controller.png" class="logo-footer" alt="">
+
+        <a href="#inicio"><img src="imgs/sete-footer.png" alt=""></a>
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+
+                <h1>GAME OVER</h1>
+
+            </div>
+
+            <div>
+
+                <h1>Avenida Liberdade 899 | CNPJ: 00.000.000/0001-00 <br><br>
+                    <span class="opening"></span><br><br>
+                    Preços e condições de pagamento exclusivos para compras via internet e 
+                    podem variar nas lojas físicas. Os preços anunciados neste site ou via e-mail 
+                    promocional podem ser alterados sem prévio aviso. A Game over informática, não é 
+                    responsável por erros descritivos. As fotos contidas nesta página são meramente 
+                    ilustrativas do produto e podem variar de acordo com o fornecedor/lote do fabricante. 
+                    Ofertas válidas até o término de nossos estoques. Vendas sujeitas à análise e confirmação 
+                    de dados.
+                </h1>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

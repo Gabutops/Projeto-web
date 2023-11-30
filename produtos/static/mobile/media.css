@@ -1,0 +1,268 @@
+/*Nav mobile*/
+
+@media screen and (max-width: 500px){
+
+    header{
+        height: 80px;
+    }
+
+    .logo-content{
+        width: 30%;
+    }
+
+    .logo-content img{
+        height: 60px;
+        width: auto;
+    }
+
+    /*banner*/
+
+    .banner-container{
+        height: 50vh;
+        background-image: url(/static/imgs/background-mobile.jpg);
+        background-size: 120%;
+    }
+
+    .banner-content h1{
+        font-size: 3rem;
+        line-height: 40px;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    .header-content{
+        width: 100%;
+    }
+
+    .items-desktop{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    .items-mobile{
+        display: block;
+    }
+
+    .menu-button, .menu-X-button{
+        right: 40px;
+        top: 20px;
+    }
+}
+
+
+/*--------------Ajustes background banner--------------------*/
+@media screen and (max-width: 1200px) and (min-width: 501px){
+    .banner-container{
+        background-size: 150%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 501px){
+    .banner-container{
+        background-size: 200%;
+    }
+}
+
+@media screen and (max-width: 750px) and (min-width: 501px){
+    .banner-container{
+        background-size: 250%;
+    }
+
+    .banner-content h1{
+        font-size: 4rem;
+        line-height: 50px;
+    }
+
+}
+
+/*-------------------items--------------------*/
+
+@media screen and (max-width: 1200px) {
+    .items-container{
+        width: 90%;
+    }
+
+    .item{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .items-container{
+        margin-top: 60px;
+    }
+
+    .items-content{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .item{
+        width: 90%;
+        margin: 0 auto;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+}
+
+/*----------------slider--------------*/
+
+@media screen and (max-width: 900px){
+
+    .slider-txt{
+        display: none;
+    }
+
+    .slider-content{
+        height: 60vh;
+    }
+
+    .slide-title h4{
+        display: none;
+    }
+
+    .price-content{
+        top: 30px;
+        font-size: 3.5rem;
+        color: rgb(237, 237, 237);
+        text-shadow: 2px 2px 10px black;
+        line-height: 50px;
+        left: 30px;
+    }
+
+    .slide img{
+        height: 100%;
+        top: 50px;
+    }
+
+    .prev-btn{
+        left: 10%;
+    }
+
+    .nxt-btn{
+        right: 10%;
+    }
+
+}
+
+@media screen and (min-width: 901px) and (max-width: 1099px){
+
+    .price-content{
+        font-size: 3.5rem;
+    }
+
+    .slider{
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1350px){
+
+    header{
+        height: 80px;
+    }
+
+    
+    .slider-txt{
+        padding-top: 20px;
+    }
+
+    .slider-txt span{
+        padding: 5px 25px 5px 25px;
+    }
+
+    .slider-content{
+        height: 80vh;
+    }
+
+    .price-content{
+        top: 70px;
+        font-size: 4.5rem;
+        line-height: 50px;
+        left: 30px;
+    }
+    .slide img{
+        height: 120%;
+        top: 10px;
+    }
+
+    .prev-btn{
+        left: 10%;
+    }
+
+    .nxt-btn{
+        right: 10%;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+    .slider-content{
+        display: none;
+    }
+}
+
+/*-------------------footer----------------*/
+@media screen and (max-width: 1200px){
+    .footer-content{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .footer-content{
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .footer-content div{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    footer{
+        height: 50vh;
+    }
+
+    footer img{
+        width: 20px;
+        right: 25px;
+        bottom: 25px;
+    }
+
+    .logo-footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    footer{
+        height: 120vh;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px){
+    footer{
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 999px){
+    footer{
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1350px) {
+    footer{
+        height: 60vh;
+    }
+}

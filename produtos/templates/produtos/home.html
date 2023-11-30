@@ -34,7 +34,7 @@
 
         <div class="logo-content">
 
-            <a href="home.html"><img src= {% static "imgs/game-controller.png" %}  alt=""></a>
+            <a href={% url 'produtos:Home' %}><img src= {% static "imgs/game-controller.png" %}  alt=""></a>
 
         </div>
 
@@ -130,89 +130,6 @@
                 </div>
             {% endfor %}
 
-            <div class="item item1">
-
-                <button class="btn-add">+</button>
-
-                <img src="imgs/monitor.png" alt="">
-
-                <p>R$0,00</p>
-
-            </div>
-            
-            <div class="item item2">
-
-                <button class="btn-add">+</button>
-
-                <img src="imgs/mouse.png" alt="">
-
-                <p>R$0,00</p>
-
-            </div>
-
-            <div class="item item3">
-
-                <button class="btn-add">+</button>
-
-                <img src="imgs/mouse-pad.png" alt="">
-
-                <p>R$0,00</p>
-
-            </div>
-
-            <div class="item item4">
-
-                <button class="btn-add">+</button>
-
-                <img src="imgs/headGamer.png" alt="">
-
-                <p>R$0,00</p>
-
-            </div>
-
-        </div>
-
-        <div class="items-content">
-
-            <div class="item item1">
-
-                <button class="btn-add">+</button>
-
-                <img src="imgs/monitor.png" alt="">
-
-                <p>R$0,00</p>
-
-            </div>
-            
-            <div class="item item2">
-
-                <button class="btn-add">+</button>
-
-                <img src="imgs/mouse.png" alt="">
-
-                <p>R$0,00</p>
-
-            </div>
-
-            <div class="item item3">
-
-                <button class="btn-add">+</button>
-
-                <img src="imgs/mouse-pad.png" alt="">
-
-                <p>R$0,00</p>
-
-            </div>
-
-            <div class="item item4">
-
-                <button class="btn-add">+</button>
-
-                <img src="imgs/headGamer.png" alt="">
-
-                <p>R$0,00</p>
-
-            </div>
 
         </div>
 
@@ -220,9 +137,9 @@
 
     <footer>
 
-        <img src="imgs/game-controller.png" class="logo-footer" alt="">
+        <img src={% static "imgs/game-controller.png" %} class="logo-footer" alt="">
 
-        <a href="#inicio"><img src="imgs/sete-footer.png" alt=""></a>
+        <a href="#inicio"><img src={% static "imgs/sete-footer.png" %} alt=""></a>
 
         <div class="footer-content">
 

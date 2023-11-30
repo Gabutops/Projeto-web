@@ -17,7 +17,7 @@ class Produtos(models.Model):
     desconto = models.FloatField(blank=True, null=True)
     quantidade = models.IntegerField('Quantidade em estoque')
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, default=False, null=True)
-    image = models.ImageField(upload_to = 'imgs/produtos')
+    image = models.ImageField(upload_to = 'imgs/')
 
     def __str__(self):
         return self.nome
